@@ -1,0 +1,37 @@
+﻿@model N01490200_Cumulative2_Winter2022_Mahshad.Models.Teacher
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New Teacher</h2>
+<form method="POST" action="/Teacher/Create" onsubmit="ValidateForm();">
+    <div class="TeacherFinput">
+        <label for="teacherfname">First Name:</label>
+        <input type="text" id="teacherfname" name="teacherfname" />
+        <p id="FnErrorMsg"></p>
+    </div>
+    <div class="TeacherLinput">
+        <label for="teacherlname">Last Name:</label>
+        <input type="text" id="teacherlname" name="teacherlname" />
+        <p id="LnErrorMsg"></p>
+    </div>
+    <div class="TeacherEinput">
+        <label for="employeenumber">Employee Number:</label>
+        <input type="text" id="employeenumber" name="employeenumber" />
+        <p id="EnErrorMsg"></p>
+    </div>
+    <div class="TeacherSinput">
+        <label for="salary"> Desired Salary:</label>
+        <input type="text" id="salary" name="salary" />
+        <p id="SnErrorMsg"></p>
+    </div>
+    <div class="TeacherHinput">
+        <label for="hiredate">Hire Date:</label>
+        <input type="date" id="hiredate" name="hiredate" />
+    </div>
+
+    <div>
+        <button type="submit">Add Teacher</button>
+    </div>
+</form>
+
